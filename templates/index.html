@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -20,7 +19,7 @@
           },
           extend: {
             backgroundImage: {
-              'hero_pattern': "url('../static/img/bg-tablet-pattern.svg')", 
+              'hero_pattern': "url('https://dummy-website-nu.vercel.app/image/bg-tablet-pattern.svg')", 
             },
             colors: {
               brightRed: '#00a359',
@@ -40,7 +39,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         body {
-                background-image: url('../img/bg-tablet-pattern.svg');
+                background-image: url('https://dummy-website-nu.vercel.app/image/bg-tablet-pattern.svg');
                 background-repeat: no-repeat;
                 background-size: 800px;
                 background-position: 90% -25%;
@@ -119,7 +118,7 @@
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <div class="pt-2">
-            <img src="../static/img/logo.svg" alt="" />
+            <img src="https://dummy-website-nu.vercel.app/image/logo.svg" alt="logo" />
           </div>
           <!-- Menu Items -->
           <div class="hidden space-x-6 md:flex"> 
@@ -130,7 +129,7 @@
           </div>
           <!-- Button -->
           <a
-            href="#"
+            href="{{ url_for('prediction') }}"
             class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-gray-900 md:block"
             >Coba Sekarang</a>
   
@@ -182,7 +181,7 @@
           </div>
           <!-- Image -->
           <div class="md:w-1/2">
-            <img src="../static/img/illustration-intro.svg" alt="" />
+            <img src="https://dummy-website-nu.vercel.app/image/illustration-intro.svg" alt="background-image" />
           </div>
         </div>
       </section>
@@ -200,7 +199,9 @@
               Bagaimana cara kerja Monitoring endapan ?
             </h2> 
 
-            <img src="../static/img/indmira.jpg" alt="indmira">
+            <img src="https://dummy-website-nu.vercel.app/image/indmira.jpg" alt="indmira">
+            
+            
           </div>
   
           <!-- Numbered List -->
@@ -309,7 +310,7 @@
             <div
               class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/2"
             >
-              <img src="../static/img/avatar-ali.png" class="w-16 -mt-14" alt="" />
+              <img src="https://dummy-website-nu.vercel.app/image/avatar-richard.png" class="w-16 -mt-14" alt="" />
               <h5 class="text-lg font-bold">Akbar Afrianuur</h5>
               <p class="text-slate-700 text-xl">
                 “Saya percaya akan kebutuhan sistem filterasi dan informasi terkait tambak, khususnya pada tambak udang yang rentan akan kondisi air dan tambak”
@@ -320,7 +321,7 @@
             <div
               class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/2"
             >
-              <img src="../static/img/avatar-richard.png" class="w-16 -mt-14" alt="" />
+              <img src="https://dummy-website-nu.vercel.app/image/avatar-anisha.png" class="w-16 -mt-14" alt="" />
               <h5 class="text-lg font-bold">Ale Putri</h5>
               <p class="text-slate-700 text-xl">
                 “Dengan sistem yang cerdas dan akurat, saya percaya bawa sistem Monitoring beitu diperlukan pada sektor perikanan dan pertambakan di indonesia.”
@@ -330,7 +331,7 @@
           <!-- Button -->
           <div class="my-16">
             <a
-              href="#"
+              href="{{ url_for('prediction') }}"
               class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-gray-900"
               >Coba Sekarang</a
             >
@@ -353,7 +354,7 @@
           <!-- Button -->
           <div>
             <a
-              href="#"
+              href="{{ url_for('prediction') }}"
               class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
               >Coba Sekarang</a
             >
@@ -376,7 +377,7 @@
             </div>
             <!-- Logo -->
             <div>
-              <img src="../static/img/logo-white.svg" class="h-8" alt="" />
+              <img src="https://dummy-website-nu.vercel.app/image/logo-white.svg" class="h-8" alt="" />
             </div>
             <!-- Social Links Container -->
             <div class="flex justify-center space-x-4">
